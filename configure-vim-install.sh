@@ -7,7 +7,6 @@ curl -LSso /home/ubuntu/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 export VIM_DIR=/home/ubuntu/myvim
 
-export PATH=$PATH:/apollo/env/SDETools/bin
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
