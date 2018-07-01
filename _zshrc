@@ -86,5 +86,5 @@ source $ZSH/oh-my-zsh.sh
 
 set -o vi
 hg() {
-	history | grep $1
+	history | grep -v "hg $1" | grep $1
 }

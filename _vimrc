@@ -63,6 +63,11 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Fuzzy finder (CTRL+P)
 Plugin 'kien/ctrlp.vim'
+
+" Silver Searcher 
+Plugin 'mileszs/ack.vim'
+
+"
 " Commentary
 Plugin 'tpope/vim-commentary'
 " Bufkill -use :BD to close a buffer
@@ -206,8 +211,20 @@ set cursorline
 set exrc
 set secure
 
+
+" Setup Silver Searcher for ack vim:
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+" nnoremap <leader>s :Ack " .@z. "<CR> 
+nnoremap <leader>s :Ack <cword><CR> 
+
 " C settings
 " YouCompleteMe config
 " let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 "
-nnoremap <leader>b :w<CR>:Make -C build<CR>
+nnoremap <leader>m :w<CR>:Make -C build<CR>
+
+
+"ctags enable for function and symbol jumping
+set tags=tags
