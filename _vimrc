@@ -228,3 +228,5 @@ nnoremap <leader>m :w<CR>:Make -C build<CR>
 
 "ctags enable for function and symbol jumping
 set tags=tags
+
+"added for simple exercise with git.  remove later..
