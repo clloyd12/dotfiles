@@ -4,7 +4,7 @@ pipeline {
 			stage('Build') {
 				steps {
 					echo "Building.. ${GIT_URL}"
-					sh make
+					sh 'make'
 				}
 			}
 			stage('Test') {
