@@ -107,8 +107,8 @@ Plugin 'vhdirk/vim-cmake'
 " Quick List toggling
 Plugin 'Valloric/ListToggle'
 " YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 " Switch easily from .h and .c files
 Plugin 'vim-scripts/a.vim'
 
