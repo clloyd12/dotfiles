@@ -88,3 +88,8 @@ set -o vi
 hg() {
 	history | grep -v "hg $1" | grep $1
 }
+
+bindkey '^R' history-incremental-search-backward
+
+
+
